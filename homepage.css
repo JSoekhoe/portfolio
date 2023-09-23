@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: auto;
+    width: 100%;
+    background-color:aquamarine;
+        #welkom{
+            font-size:large ; 
+            float: left;
+
+    }
+        nav{
+            top:auto;
+            float: right;
+            right: 0px;
+    }
+}
+
+main{
+    padding: 1%;
+    background-color:blue;
+    width: 100%;
+}
+
+footer{
+   position: absolute;
+   width: 100%;
+   bottom: 0px;
+   background-color: darkgray;
+};

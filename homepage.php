@@ -30,4 +30,3 @@
         </footer>
     <body>
  </html>
- <!-- je weet zelf -->

@@ -6,7 +6,7 @@
     <body>
         <header>
             <class id=welkom> 
-                <p>Opdrachten</p>
+                <p>About Us</p>
             </class>
             <nav>
                 <a href="homepage.php">Home</a>
@@ -16,8 +16,8 @@
         </header> 
         <main>
             <section>
-                <p> (opdracht naam) </p>
-                <article> (informatieopdracht)
+                <p>Joerie</p>
+                <article> (info Joerie)
                 </article>
             </section>
         </main>

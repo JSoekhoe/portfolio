@@ -3,6 +3,7 @@
     padding: 0;
 }
 header {
+    /* grid-template-columns: 1fr 1fr; */
     min-height: 10%;
     position: sticky;
     top: 0;
@@ -22,7 +23,7 @@ a:link {
 a:visited {
         color: blue;
 }
-a:hover {
+ a:hover {
     color: blue;
 }
 header nav {    
@@ -44,3 +45,4 @@ footer{
    bottom: 0px;
    background-color: darkgray;
 }
+

@@ -17,8 +17,7 @@
         <main>
             <section>
                 <p>Joerie</p>
-                <article> (info Joerie)
-                </article>
+                <article> (info Joerie) </article>
             </section>
         </main>
         <footer>

@@ -24,9 +24,10 @@
             </section>
         </main>
         <footer>
-                <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.php">About Us</a>
+            <a href="homepage.php">Home</a>
+            <a href="opdrachtenpage.php">Opdrachten</a>
+            <a href="aboutuspage.php">About Us</a>
         </footer>
     <body>
  </html>
+ 

@@ -11,7 +11,7 @@
             <nav>
                 <a href="homepage.php">Home</a>
                 <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.html">About Us</a>
+                <a href="aboutuspage.php">About Us</a>
             </nav>
         </header> 
         <main>
@@ -25,9 +25,8 @@
         </main>
         <footer>
                 <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.html">Opdrachten</a>
-                <a href="aboutuspage.html">About Us</a>
+                <a href="opdrachtenpage.php">Opdrachten</a>
+                <a href="aboutuspage.php">About Us</a>
         </footer>
     <body>
  </html>
- <!-- je weet zelf -->

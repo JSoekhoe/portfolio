@@ -9,15 +9,10 @@
                 <p>Welkom Bij onze portfolio</p>
             </class>
             <nav>
-
                 <div>
                     <a href="homepage.php">Home</a>
-                </div>
-                <div>
-                    <a href="opdrachtenpage.php">Home</a>
-                </div>
-                <div>
-                    <a href="aboutuspage.php">Home</a>
+                    <a href="opdrachtenpage.php">Opdrachten</a>
+                    <a href="aboutuspage.php">About Us</a>
                 </div>
             </nav>
         </header> 
@@ -36,9 +31,4 @@
             <a href="aboutuspage.php">About Us</a>
         </footer>
     <body>
-<<<<<<< HEAD
  </html>
- 
-=======
- </html>
->>>>>>> f7c200f8ad71dc8f877718dac92851fd5aecc564

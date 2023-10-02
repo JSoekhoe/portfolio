@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>JJJ</title>
-        <link href="homepage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+        <link href="aboutuspage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
     </head>
     <body>
         <header>

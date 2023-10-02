@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    min-height: 10%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#welkom {
+    color: orangered;
+    font-size: large;
+    float: left;
+    width: 50%;
+}
+a:active {
+    font-weight: bold;
+}
+a:link {
+    color: orangered;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: blue;
+}
+
+header nav {
+    float: right;
+    right: 0px;
+    width: 50%;
+}
+
+
+main{
+    padding: 1%;
+    background-color:grey;
+    width: 100%;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: lightgray;
+}

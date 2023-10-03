@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    gap: 1%
 }
 header {
-    min-height: 10%;
+    min-height: 14%;
     position: sticky;
     top: 0;
     width: 100%;
@@ -38,11 +39,13 @@ header nav {
 
 main{
     padding: 1%;
+    height: 80%;
     background-color:grey;
     width: 100%;
 }
 
 footer{
+    height: 4%;
     position: absolute;
     width: 100%;
     bottom: 0px;

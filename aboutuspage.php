@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>JJJ</title>
-        <link href="homepage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+        <link href="aboutuspage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <class id=welkom> 
+            <div id=welkom>
                 <p>About Us</p>
-            </class>
+            </div>
             <nav>
                 <a href="homepage.php">Home</a>
                 <a href="opdrachtenpage.php">Opdrachten</a>
@@ -17,15 +17,14 @@
         <main>
             <section>
                 <p>Joerie</p>
-                <article> (info Joerie)
-                </article>
+                <article> (info Joerie) </article>
             </section>
         </main>
         <footer>
-                <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.php">About Us</a>
+            <a href="homepage.php">Home</a>
+            <a href="opdrachtenpage.php">Opdrachten</a>
+            <a href="aboutuspage.php">About Us</a>
         </footer>
-    <body>
+    </body>
  </html>
  

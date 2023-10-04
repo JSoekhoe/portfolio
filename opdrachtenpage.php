@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>JJJ</title>
-        <link href="homepage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+        <link href="opdrachtenpage.css" rel="stylesheet" integrity="" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <class id=welkom> 
+            <div id=welkom>
                 <p>Opdrachten</p>
-            </class>
+            </div>
             <nav>
                 <a href="homepage.php">Home</a>
                 <a href="opdrachtenpage.php">Opdrachten</a>
@@ -22,10 +22,10 @@
             </section>
         </main>
         <footer>
-                <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.php">About Us</a>
+            <a href="homepage.php">Home</a>
+            <a href="opdrachtenpage.php">Opdrachten</a>
+            <a href="aboutuspage.php">About Us</a>
         </footer>
-    <body>
+    </body>
  </html>
  

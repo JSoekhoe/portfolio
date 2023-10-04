@@ -5,19 +5,14 @@
     </head>
     <body>
         <header>
-            <class id=welkom> 
+            <div id=welkom>
                 <p>Welkom Bij onze portfolio</p>
-            </class>
+            </div>
             <nav>
-
                 <div>
                     <a href="homepage.php">Home</a>
-                </div>
-                <div>
-                    <a href="opdrachtenpage.php">Home</a>
-                </div>
-                <div>
-                    <a href="aboutuspage.php">Home</a>
+                    <a href="opdrachtenpage.php">Opdrachten</a>
+                    <a href="aboutuspage.php">About Us</a>
                 </div>
             </nav>
         </header> 
@@ -31,9 +26,9 @@
             </section>
         </main>
         <footer>
-                <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.php">About Us</a>
+            <a href="homepage.php">Home</a>
+            <a href="opdrachtenpage.php">Opdrachten</a>
+            <a href="aboutuspage.php">About Us</a>
         </footer>
-    <body>
+    </body>
  </html>

@@ -21,11 +21,11 @@
                 </article>
             </section>
         </main>
-        <footer>
-                <a href="homepage.php">Home</a>
-                <a href="opdrachtenpage.php">Opdrachten</a>
-                <a href="aboutuspage.php">About Us</a>
-        </footer>
-    <body>
+    </body>
+    <footer>
+        <a href="homepage.php">Home</a>
+        <a href="opdrachtenpage.php">Opdrachten</a>
+        <a href="aboutuspage.php">About Us</a>
+    </footer>
  </html>
  

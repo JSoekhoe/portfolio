@@ -5,9 +5,9 @@
     </head>
     <body>
         <header>
-            <class id=welkom> 
+            <div id=welkom>
                 <p>Opdrachten</p>
-            </class>
+            </div>
             <nav>
                 <a href="homepage.php">Home</a>
                 <a href="opdrachtenpage.php">Opdrachten</a>
@@ -21,11 +21,11 @@
                 </article>
             </section>
         </main>
+        <footer>
+            <a href="homepage.php">Home</a>
+            <a href="opdrachtenpage.php">Opdrachten</a>
+            <a href="aboutuspage.php">About Us</a>
+        </footer>
     </body>
-    <footer>
-        <a href="homepage.php">Home</a>
-        <a href="opdrachtenpage.php">Opdrachten</a>
-        <a href="aboutuspage.php">About Us</a>
-    </footer>
  </html>
  

@@ -22,4 +22,4 @@ $stmt = $conn->prepare($sql);
 $stmt->execute();
 $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-require 'portfolio/view/homepage.php';
+require 'portfolio/view/homepage.view.php';

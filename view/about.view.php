@@ -6,29 +6,28 @@
     <body>
         <header>
             <div id=welkom>
-                <p>Opdrachten</p>
+                <p>About Us</p>
             </div>
             <nav>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                    aria-current="page" href="/">Home</a>
-                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/opdrachten' ? 'active' : ''); ?>"
-                   aria-current="page" href="/opdrachten">Opdrachten</a>
+                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : ''); ?>"
+                   aria-current="page" href="/login">Login</a>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                    aria-current="page" href="/about">About</a>
             </nav>
         </header> 
         <main>
             <section>
-                <p> (opdracht naam) </p>
-                <article> (informatieopdracht)
-                </article>
+                <p>Joerie</p>
+                <article> (info Joerie) </article>
             </section>
         </main>
         <footer>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                aria-current="page" href="/">Home</a>
-            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/opdrachten' ? 'active' : ''); ?>"
-               aria-current="page" href="/opdrachten">Opdrachten</a>
+            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : ''); ?>"
+               aria-current="page" href="/login">Login</a>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                aria-current="page" href="/about">About</a>
         </footer>

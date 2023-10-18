@@ -6,31 +6,37 @@
     <body>
         <header>
             <div id=welkom>
-                <p>About Us</p>
+                <p>Login</p>
             </div>
             <nav>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                    aria-current="page" href="/">Home</a>
-                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/opdrachten' ? 'active' : ''); ?>"
-                   aria-current="page" href="/opdrachten">Opdrachten</a>
+                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : ''); ?>"
+                   aria-current="page" href="/login">Login</a>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                    aria-current="page" href="/about">About</a>
             </nav>
-        </header> 
+        </header>
         <main>
             <section>
-                <p>Joerie</p>
-                <article> (info Joerie) </article>
+                <div>
+                    <form action="../login.php" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" required><br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" required><br>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                aria-current="page" href="/">Home</a>
-            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/opdrachten' ? 'active' : ''); ?>"
-               aria-current="page" href="/opdrachten">Opdrachten</a>
+            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : ''); ?>"
+               aria-current="page" href="/login">Login</a>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                aria-current="page" href="/about">About</a>
         </footer>
     </body>
  </html>
- 

@@ -1,14 +1,15 @@
 <?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'demo');
+$servername = "localhost"; // Replace with your MySQL server name or IP address
+$username = "root"; // Replace with your MySQL username
+$password = "joeriesoekhoe"; // Replace with your MySQL password
+$database = "profileApp"; // Replace with your MySQL database name
 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Create a connection
+$mysqli = new mysqli($servername, $username, $password, $database);
 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+// Check the connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
 }
 ?>
+

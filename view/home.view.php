@@ -21,19 +21,6 @@
         </header> 
         <main>
             <section>
-<!--                <p> --><?php
-//                    echo "<table>";
-//                    foreach ($users as $user) {
-//
-//                        echo "<tr>";
-//                        echo "<td>" . $user['username'] . "</td>
-//                          <td>" . "<a href='portfolio/home.php?id=" . $user['id'] . "'>hobbies</a>" . "</td>
-//                          <td>" . "<a href='profiles.php?id=" . $user['id'] . "'>profile</a>" . "</td>";
-//                        echo "<tr>";
-//                    }
-//                    echo "</table>";
-//                    ?>
-                </p>
                 <article>In deze ProfileApp gaan wij gebruikers helpen met het bijhouden van hun prestatievoortgang.</article>
             </section>
         </main>

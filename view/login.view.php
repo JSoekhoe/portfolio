@@ -11,8 +11,8 @@
             <nav>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                    aria-current="page" href="/">Home</a>
-                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/login' ? 'active' : ''); ?>"
-                   aria-current="page" href="/login">Login</a>
+                <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/dashboard' ? 'active' : ''); ?>"
+                   aria-current="page" href="/dashboard">Dashboard</a>
                 <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                    aria-current="page" href="/about">About</a>
             </nav>

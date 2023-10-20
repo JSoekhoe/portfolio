@@ -20,12 +20,11 @@
         <main>
             <section>
                 <div>
-                    <form action="../login.php" method="post">
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" required><br>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" required><br>
+                    <form action="../database/login.php" method="post">
+                        Username: <input type="text" name="username"><br>
+                        Password: <input type="password" name="password"><br>
                         <input type="submit" value="Login">
+                        <a href="/registration" class="register-button">Register</a>
                     </form>
                 </div>
             </section>

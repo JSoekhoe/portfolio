@@ -19,8 +19,8 @@
         </header> 
         <main>
             <section>
-                <p>Joerie</p>
-                <article> (info Joerie) </article>
+                <p>informatie opdracht </p>
+                <article> (info developers) </article>
             </section>
         </main>
         <footer>

@@ -6,7 +6,7 @@
 <body>
 <header>
     <div id=welkom>
-        <p>Login</p>
+        <p>Registration</p>
     </div>
     <nav>
         <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
@@ -25,6 +25,7 @@
                 Lastname: <input type="text" name="lastname"><br>
                 Username: <input type="text" name="username"><br>
                 Password: <input type="password" name="password"><br>
+                Repeat Password: <input type="password" name="password_repeat"><br>
                 <input type="submit" value="Register">
             </form>
         </div>

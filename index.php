@@ -9,6 +9,11 @@ $routes = [
     "/logout" => "controllers/logout.php",
     "/registration" => "controllers/registration.php",
     "/dashboard" => "controllers/dashboard.php",
+    "/profile" => "controllers/profile.php",
+    "/schoolprestaties" => "controllers/schoolprestaties.php",
+    "/hobbies" => "controllers/hobbies.php",
+    "/werkervaring" => "controllers/werkervaring.php",
+
 ];
 
 if(array_key_exists($_SERVER['REQUEST_URI'], $routes)) {

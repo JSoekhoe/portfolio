@@ -1,2 +1,2 @@
 <?php
-require '../database/logout.php';
+require 'database/logout.php';

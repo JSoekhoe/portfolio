@@ -19,9 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare("INSERT INTO users (name, lastname, username, password) VALUES (?, ?, ?, ?)");
         $stmt->execute([$name, $lastname, $username, $password]);
 
-        echo "Registration successful. You can now log in.";
+        echo "Registration successful. You can now <a href='/login'>log in</a>.";
+//        header("Location: /dashboard");
     } catch (PDOException $e) {
-        echo "Registration failed: " . $e->getMessage();
+        echo "Registratie mislukt. Probeer het opnieuw. Zorg ervoor dat alle gegevens zijn ingevuld";
     }
 } else {
     echo "Passwords do not match. Please try again.";

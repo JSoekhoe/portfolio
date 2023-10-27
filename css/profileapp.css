@@ -48,7 +48,7 @@ a:hover {
 
 header nav {
     grid-area: 1 / 2 / 2 / 3;
-    right: 0px;
+    /*right: 0px;*/
 }
 
 main {

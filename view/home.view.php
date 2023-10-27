@@ -12,8 +12,8 @@
                 <div>
                     <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                        aria-current="page" href="/">Home</a>
-                    <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/dashboard' ? 'active' : ''); ?>"
-                       aria-current="page" href="/dashboard">Dashboard</a>
+                    <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/profile' ? 'active' : ''); ?>"
+                       aria-current="page" href="/profile">Profiel</a>
                     <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                        aria-current="page" href="/about">About</a>
                 </div>
@@ -27,8 +27,8 @@
         <footer>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                aria-current="page" href="/">Home</a>
-            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/dashboard' ? 'active' : ''); ?>"
-               aria-current="page" href="/dashboard">Dashboard</a>
+            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/profile' ? 'active' : ''); ?>"
+               aria-current="page" href="/profile">Profiel</a>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''); ?>"
                aria-current="page" href="/about">About</a>
         </footer>

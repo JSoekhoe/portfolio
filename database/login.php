@@ -1,7 +1,10 @@
 <?php
 include "private.php";
-session_start();
+?>
+<link href="../css/profileapp.css" rel="stylesheet" integrity="" crossorigin="anonymous"/>
+<?php
 
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -20,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // User is authenticated
             $_SESSION["user_id"] = $user["id"];
             $_SESSION["username"] = $user["username"];
-            header("Location: /dashboard"); // Redirect to a secure page
+            header("Location: /profile"); // Redirect to a secure page
         } else {
             echo "Invalid username or password.";
         }
@@ -28,6 +31,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Login failed: " . $e->getMessage();
     }
 }
-?>
-
 ?>

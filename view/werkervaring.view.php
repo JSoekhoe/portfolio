@@ -18,8 +18,8 @@ if (!isset($_SESSION["user_id"])) {
         <div>
             <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
                aria-current="page" href="/">Home</a>
-            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/dashboard' ? 'active' : ''); ?>"
-               aria-current="page" href="/dashboard">Dashboard</a>
+            <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/profile' ? 'active' : ''); ?>"
+               aria-current="page" href="/profile">Profiel</a>
             <a href="/logout">Logout</a>
         </div>
     </nav>
@@ -32,8 +32,8 @@ if (!isset($_SESSION["user_id"])) {
 <footer>
     <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/' ? 'active' : ''); ?>"
        aria-current="page" href="/">Home</a>
-    <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/dashboard' ? 'active' : ''); ?>"
-       aria-current="page" href="/dashboard">Dashboard</a>
+    <a class="nav-link <?= ($_SERVER['REQUEST_URI'] == '/profile' ? 'active' : ''); ?>"
+       aria-current="page" href="/profile">Profiel</a>
     <a href="/logout">Logout</a>
 </footer>
 </body>

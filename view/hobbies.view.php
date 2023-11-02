@@ -1,12 +1,16 @@
-<?php session_start();
+<?php
+
+session_start();
 if (!isset($_SESSION["user_id"])) {
     header("Location: /login"); // Redirect to the login page if not logged in
     exit();
-} include "database/hobbies.php"
+}
+
+include "database/hobbies.php"
 ?>
 <html>
 <head>
-    <title>Your Page Title</title>
+    <title>JJJ</title>
     <link href="../css/profileapp.css" rel="stylesheet" integrity="" crossorigin="anonymous"/>
 </head>
 <body>
@@ -27,14 +31,23 @@ if (!isset($_SESSION["user_id"])) {
 <main>
     <section>
         <article>
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <input type="text" name="new_hobby" placeholder="Enter a new hobby">
                 <input type="submit" name="add_hobby" value="Add Hobby">
+                <input type="file" name="hobby_image">
             </form>
             <ul>
                 <?php
                 foreach ($hobbies as $hobby) {
                     echo "<li>" . htmlspecialchars($hobby['hobby_name']);
+
+                    // Display an image if it exists
+                    if (!empty($hobby['image_data']) && !empty($hobby['image_type'])) {
+                        $image_data = base64_encode($hobby['image_data']);
+                        $image_type = $hobby['image_type'];
+                        $src = "data:$image_type;base64,$image_data";
+                        echo "<img src='$src' alt='" . htmlspecialchars($hobby['hobby_name']) . "'>";
+                    }
 
                     // Add an edit and delete form for each hobby
                     echo "<form method='post' style='display: inline;'>";
@@ -51,7 +64,6 @@ if (!isset($_SESSION["user_id"])) {
                 ?>
             </ul>
         </article>
-        <article></article>
     </section>
 </main>
 <footer>

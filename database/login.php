@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Query to fetch user data based on the username and password
-        $stmt = $pdo->prepare("SELECT id, username FROM users WHERE username = ? AND password = ?");
+        $stmt = $pdo->prepare("SELECT user_id, username FROM users WHERE username = ? AND password = ?");
         $stmt->execute([$username, $password]);
         $user = $stmt->fetch();
 
         if ($user) {
             // User is authenticated
-            $_SESSION["user_id"] = $user["id"];
+            $_SESSION["user_id"] = $user["user_id"];
             $_SESSION["username"] = $user["username"];
             header("Location: /profile"); // Redirect to a secure page
         } else {

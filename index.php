@@ -3,6 +3,7 @@
 // Define an associative array of routes and their corresponding controller files.
 $routes = [
     "/" => "controllers/home.php",
+    "/admin" => "controllers/admin.php",
     "/about" => "controllers/about.php",
     "/login" => "controllers/login.php",
     "/logout" => "controllers/logout.php",

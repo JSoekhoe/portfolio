@@ -59,6 +59,13 @@ main {
 
 }
 
+.hobby-image {
+    max-width: 35%;
+    max-height: 35%;
+    width: auto;
+    height: auto;
+}
+
 footer {
     grid-area: 3 / 1 / 4 / 3;
     height: 4%;

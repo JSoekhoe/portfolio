@@ -6,7 +6,7 @@ if (!isset($_SESSION["user_id"])) {
 ?>
 <html>
 <head>
-    <title>Your Profile</title>
+    <title>JJJ</title>
     <link href="../css/profileapp.css" rel="stylesheet" integrity="" crossorigin="anonymous"/>
 </head>
 <body>

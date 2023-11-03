@@ -1,10 +1,13 @@
 <?php
+// Include your database credentials from "private.php"
 include "private.php";
 ?>
 <link href="../css/profileapp.css" rel="stylesheet" integrity="" crossorigin="anonymous"/>
 <?php
-
+// Start a session
 session_start();
+
+// Check if a POST request is made
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -20,15 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $stmt->fetch();
 
         if ($user) {
-            // User is authenticated
+            // User is authenticated, store user data in session
             $_SESSION["user_id"] = $user["user_id"];
             $_SESSION["username"] = $user["username"];
-            header("Location: /profile"); // Redirect to a secure page
+            header("Location: /profile"); // Redirect to a secure page (e.g., user's profile)
         } else {
-            echo "Invalid username or password.";
+            echo "Invalid username or password."; // Display an error message
         }
     } catch (PDOException $e) {
-        echo "Login failed: " . $e->getMessage();
+        echo "Login failed: " . $e->getMessage(); // Handle a database connection error
     }
 }
 ?>

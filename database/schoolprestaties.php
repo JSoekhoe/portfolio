@@ -1,10 +1,12 @@
 <?php
-// Include your database credentials
+// Include your database credentials from "private.php"
 include "private.php";
 
+// Create a PDO database connection
 $pdo = new PDO("mysql:host=$servername;dbname=$database", $db_username, $db_password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+// Get the user's ID from the session
 $user_id = $_SESSION['user_id'];
 
 // Function to get a grade by ID from the array

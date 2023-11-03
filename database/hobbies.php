@@ -11,12 +11,14 @@ if (isset($_SESSION['user_id'])) {
 
     // Add a new hobby
     if (isset($_POST['add_hobby'])) {
+        // Retrieve form data
         $new_hobby = $_POST['new_hobby'];
         $image_data = null;
         $image_type = null;
 
         // Check if an image file has been provided
         if (!empty($_FILES['hobby_image']['name'])) {
+            // Retrieve image file information
             $image_name = $_FILES['hobby_image']['name'];
             $image_tmp_name = $_FILES['hobby_image']['tmp_name'];
             $image_type = $_FILES['hobby_image']['type'];
@@ -38,6 +40,7 @@ if (isset($_SESSION['user_id'])) {
 
     // Edit a hobby
     if (isset($_POST['edit_hobby'])) {
+        // Retrieve form data
         $edited_hobby_name = $_POST['edited_hobby_name'];
         $edit_id = $_POST['edit_id'];
 
@@ -55,7 +58,9 @@ if (isset($_SESSION['user_id'])) {
 
     // Delete a hobby
     if (isset($_POST['delete_hobby'])) {
+        // Retrieve form data
         $delete_id = $_POST['delete_id'];
+
         // Delete the hobby from the "hobbies" table
         $deleteStmt = $pdo->prepare("DELETE FROM hobbies WHERE hobby_id = ? AND user_id = ?");
         $deleteStmt->execute([$delete_id, $user_id]);
@@ -66,16 +71,20 @@ if (isset($_SESSION['user_id'])) {
     $stmt->execute([$user_id]);
     $hobbies = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
 // Delete an image
 if (isset($_POST['delete_image'])) {
+    // Retrieve form data
     $image_id = $_POST['delete_image_id'];
 
     // Delete the image from the "hobby_images" table
     $deleteImageStmt = $pdo->prepare("DELETE FROM hobby_images WHERE hobby_id = ?");
     $deleteImageStmt->execute([$image_id]);
 }
+
 // Handle image update
 if (isset($_POST['edit_image'])) {
+    // Retrieve form data
     $edit_image_id = $_POST['edit_image_id'];
 
     if (!empty($_FILES['new_hobby_image']['name'])) {
@@ -92,8 +101,10 @@ if (isset($_POST['edit_image'])) {
         $updateImageStmt->execute([$new_image_data, $new_image_type, $edit_image_id]);
     }
 }
+
 // Add a new description
 if (isset($_POST['add_description'])) {
+    // Retrieve form data
     $new_description = $_POST['new_description'];
     $add_description_id = $_POST['add_description_id'];
 
@@ -104,6 +115,7 @@ if (isset($_POST['add_description'])) {
 
 // Edit a description
 if (isset($_POST['edit_description'])) {
+    // Retrieve form data
     $edited_description = $_POST['edited_description'];
     $edit_id = $_POST['edit_id'];
 
@@ -114,10 +126,12 @@ if (isset($_POST['edit_description'])) {
 
 // Delete a description
 if (isset($_POST['delete_description'])) {
+    // Retrieve form data
     $delete_id = $_POST['delete_id'];
 
     // Delete the description from the "hobbies" table
     $deleteDescriptionStmt = $pdo->prepare("UPDATE hobbies SET hobby_description = NULL WHERE hobby_id = ? AND user_id = ?");
     $deleteDescriptionStmt->execute([$delete_id, $user_id]);
 }
+
 ?>

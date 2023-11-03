@@ -1,7 +1,6 @@
 <?php
 
-
-
+// Define an associative array of routes and their corresponding controller files.
 $routes = [
     "/" => "controllers/home.php",
     "/about" => "controllers/about.php",
@@ -13,12 +12,14 @@ $routes = [
     "/schoolprestaties" => "controllers/schoolprestaties.php",
     "/hobbies" => "controllers/hobbies.php",
     "/werkervaring" => "controllers/werkervaring.php",
-
 ];
 
-if(array_key_exists($_SERVER['REQUEST_URI'], $routes)) {
+// Check if the current request URI matches any defined route.
+if (array_key_exists($_SERVER['REQUEST_URI'], $routes)) {
+    // If a matching route is found, require the corresponding controller file.
     require $routes[$_SERVER['REQUEST_URI']];
 } else {
-    echo " ERROR 404";
+    // If no matching route is found, display a 404 error message.
+    echo "ERROR 404";
 }
 

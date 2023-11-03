@@ -1,9 +1,12 @@
 <?php
+// Include the database credentials from "private.php"
 include 'private.php';
 
+// Start a session
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get user input from the form
     $name = $_POST["name"];
     $lastname = $_POST["lastname"];
     $username = $_POST["username"];
@@ -12,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Create a PDO connection
-        $pdo = new PDO("mysql:host=$servername;dbname=$database", $db_username, $db_password);;
+        $pdo = new PDO("mysql:host=$servername;dbname=$database", $db_username, $db_password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Prepare an SQL statement to insert the user into the database
@@ -20,12 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$name, $lastname, $username, $password]);
 
         echo "Registration successful. You can now <a href='/login'>log in</a>.";
-//        header("Location: /dashboard");
     } catch (PDOException $e) {
-        echo "Registratie mislukt. Probeer het opnieuw. Zorg ervoor dat alle gegevens zijn ingevuld";
+        echo "Registration failed. Please try again. Make sure all fields are filled in.";
     }
 } else {
     echo "Passwords do not match. Please try again.";
 }
-
 ?>

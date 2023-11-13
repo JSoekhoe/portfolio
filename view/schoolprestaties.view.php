@@ -61,16 +61,16 @@ include "database/schoolprestaties.php"
                                 <form method="post">
                                     <input type="hidden" name="edit_school_id" value="<?php echo $grade['school_id']; ?>">
                                     <label for="edited_school_name">School Name:</label>
-                                    <input type="text" name="edited_school_name" value="<?php echo $edited_grade['school_name']; ?>"><br>
+                                    <input type="text" name="edited_school_name" value="<?php echo htmlspecialchars($grade['school_name']); ?>"><br>
 
                                     <label for="edited_study">Study:</label>
-                                    <input type="text" name="edited_study" value="<?php echo $edited_grade['study']; ?>"><br>
+                                    <input type="text" name="edited_study" value="<?php echo htmlspecialchars($grade['study']); ?>"><br>
 
-                                    <label for "edited_class">Class:</label>
-                                    <input type="text" name="edited_class" value="<?php echo $edited_grade['class']; ?>"><br>
+                                    <label for="edited_class">Class:</label>
+                                    <input type="text" name="edited_class" value="<?php echo htmlspecialchars($grade['class']); ?>"><br>
 
                                     <label for="edited_grade">Grade:</label>
-                                    <input type="number" name="edited_grade" step="0.1" min="0" max="10.0" value="<?php echo $edited_grade['grade']; ?>"><br>
+                                    <input type="number" name="edited_grade" step="0.1" min="0" max="10.0" value="<?php echo $grade['grade']; ?>"><br>
 
                                     <input type="submit" name="submit_edit" value="Submit Edit">
                                 </form>
